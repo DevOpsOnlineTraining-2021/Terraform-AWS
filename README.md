@@ -18,11 +18,18 @@
 
 *Step-4*: Tested this script (`templates/tomcat_startup.sh`) on RHEL8 server. Update the AMI details(variable name `amis`) in https://github.com/DevOpsOnlineTraining-2021/Terraform-AWS/blob/master/variables.tf
 
-*Step-5*: Run the below commands
-
-    terraform validate
+*Step-5*: Run command: `terraform validate`
     
         Success! The configuration is valid.
 
 
+*Step-6*: `terraform plan` (this command gives lengthy output, so pasting here only the few lines from end of the output)
 
+    
+      Plan: 2 to add, 0 to change, 0 to destroy.
+
+      Changes to Outputs:
+        + jenkins_master_private_ip = (known after apply)
+        + jenkins_master_public_ip  = (known after apply)
+    
+*Step-7*: `terraform apply`
