@@ -33,3 +33,11 @@
         + jenkins_master_public_ip  = (known after apply)
     
 *Step-7*: `terraform apply`
+
+
+      Do you want to perform these actions?
+        Terraform will perform the actions described above.
+        Only 'yes' will be accepted to approve.
+
+        Enter a value: yes
+
