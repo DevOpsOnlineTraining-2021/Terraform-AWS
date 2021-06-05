@@ -32,7 +32,7 @@
         + jenkins_master_private_ip = (known after apply)
         + jenkins_master_public_ip  = (known after apply)
     
-*Step-7*: `terraform apply`
+*Step-7*: `terraform apply` (User have to access this change, enter a value: yes )
 
 
       Do you want to perform these actions?
@@ -41,3 +41,41 @@
 
         Enter a value: yes
 
+     ---------------------
+     
+      aws_security_group.security_group_tomcat: Creating...
+      aws_security_group.security_group_tomcat: Creation complete after 9s [id=sg-024af18b7739bb660]
+      aws_instance.tomcat: Creating...
+      aws_instance.tomcat: Still creating... [10s elapsed]
+      aws_instance.tomcat: Still creating... [20s elapsed]
+      aws_instance.tomcat: Still creating... [30s elapsed]
+      
+![image](https://user-images.githubusercontent.com/24622526/120889159-76876980-c619-11eb-9084-554934e36ed9.png)
+
+      aws_instance.tomcat: Provisioning with 'file'...
+      aws_instance.tomcat: Still creating... [40s elapsed]
+      aws_instance.tomcat: Still creating... [50s elapsed]
+      aws_instance.tomcat: Still creating... [1m0s elapsed]
+      aws_instance.tomcat: Still creating... [1m10s elapsed]
+      aws_instance.tomcat: Still creating... [1m20s elapsed]
+      aws_instance.tomcat: Still creating... [1m30s elapsed]
+      aws_instance.tomcat: Still creating... [1m40s elapsed]
+      aws_instance.tomcat: Provisioning with 'file'...
+      aws_instance.tomcat: Provisioning with 'file'...
+      aws_instance.tomcat: Still creating... [1m50s elapsed]
+      aws_instance.tomcat: Provisioning with 'remote-exec'...
+      aws_instance.tomcat (remote-exec): Connecting to remote host via SSH...
+
+
+      installation of the tools 
+      
+      aws_instance.tomcat: Creation complete after 4m0s [id=i-083bdc91b81535219]
+
+      Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+      Outputs:
+
+      jenkins_master_private_ip = "172.31.81.80"
+      jenkins_master_public_ip = "54.211.221.199"
+      
+      
